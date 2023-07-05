@@ -46,8 +46,8 @@ public:
 	// Перегрузка оператора (*) Координаты точки (1,1) на число  value
 	friend const Fraction operator*(const Fraction& point, double value)
 	{
-		//return Fraction(point._x * value, point._y * value);
-		return point * value;
+		return Fraction(point._x * value, point._y * value);
+		//return point * value;
 	}
 
 	// Перегрузка оператора (/) Деление двух точек
@@ -59,8 +59,8 @@ public:
 	// Деление координаты точки (1,1) на число value
 	friend const Fraction operator/(const Fraction& point, double value)
 	{
-		//return Fraction(point._x / value, point._y / value);
-		return point / value;
+		return Fraction(point._x / value, point._y / value);
+		//return point / value;
 	}
 };
 
@@ -71,7 +71,7 @@ int main()
 	double a = 10;
 
 
-	Fraction C1 = (A,a);
+	Fraction C1 = A+B;
 	C1.Show();
 
 	/*Fraction C = A - B;
