@@ -62,7 +62,6 @@ public:
 		//return Fraction(point._x / value, point._y / value);
 		return point / value;
 	}
-
 };
 
 int main()
